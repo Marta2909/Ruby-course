@@ -1,0 +1,27 @@
+require 'date'
+
+module Romance
+  class Date
+  end
+end
+
+module Calendar
+  class Date
+  end
+  class Event
+    def test
+      puts Date
+      puts ::Date
+      puts Romance::Date
+      puts ::Romance::Date
+      puts Fruit::Date
+    end
+  end
+end
+
+module Fruit
+  class Date
+  end
+end
+
+Calendar::Event.new.test
